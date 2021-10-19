@@ -17,7 +17,7 @@ run:
 .PHONY: run/gpu
 run/gpu:
 	@docker run --rm -it \
-		--gpus all
+		--gpus all \
 		-u root \
 		--name $(CONTAINER_NAME) \
 		-v $(shell pwd):/var/www \
